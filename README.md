@@ -1,6 +1,6 @@
 # Markdown Lint Rules for Grav Pages
 
-![travis.ci Status](https://api.travis-ci.org/syseleven/markdownlint-rules-grav-pages.svg?branch=master)
+[![Build Status](https://travis-ci.org/syseleven/markdownlint-rules-grav-pages.svg?branch=master)](https://travis-ci.org/syseleven/markdownlint-rules-grav-pages)
 
 This package contains additional linting rules for [markdownlint](https://github.com/DavidAnson/markdownlint)
 that check if a Markdown file is a valid [Grav CMS](https://getgrav.org/) page.
