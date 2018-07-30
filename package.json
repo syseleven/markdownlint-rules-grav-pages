@@ -11,7 +11,7 @@
     "release": "standard-version"
   },
   "keywords": [
-    "markdownlint-rules"
+    "markdownlint-rule"
   ],
   "dependencies": {
     "jsonschema": "^1.2.4",
