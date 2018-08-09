@@ -37,7 +37,7 @@
     "taxonomy": {
       "type": "object",
       "properties": {
-        "category": { "type": "string" },
+        "category": { "type": "array", "items": { "type": "string" } },
         "tag": { "type": "array", "items": { "type": "string" } }
       },
       "additionalProperties": false

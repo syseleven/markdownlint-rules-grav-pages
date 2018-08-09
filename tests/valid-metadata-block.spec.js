@@ -46,3 +46,13 @@ test('validate unrecognized property', () => {
         ruleNames: ['valid-metadata-block'],
     }]);
 });
+
+test('validate valid taxonomy', () => {
+    const src = `${__dirname}/assets/valid-metadata-block/valid-taxonomy.md`;
+    const results = markdownlint.sync({
+        customRules: validMetadataBlockRule,
+        files: [src],
+    });
+
+    expect(results[src]).toEqual([]);
+});
