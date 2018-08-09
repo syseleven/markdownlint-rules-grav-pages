@@ -11,12 +11,8 @@ module.exports = {
                 if (attr[0] === 'src') {
                     const imgSrc = attr[1];
                     if (!imgSrc.match(/^(https?:)/)) {
-                        let path;
-                        if (imgSrc.match(/^\//)) {
-                            path = `pages${imgSrc}`;
-                        } else {
-                            path = `${params.name.split('/').slice(0, -1).join('/')}/${imgSrc}`;
-                        }
+                        const path = `${params.name.split('/').slice(0, -1).join('/')}/${imgSrc}`;
+
                         if (!fs.existsSync(path) || !fs.lstatSync(path).isFile()) {
                             onError({
                                 lineNumber: image.lineNumber,
