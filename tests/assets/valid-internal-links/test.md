@@ -26,3 +26,11 @@ As child: valid [Text](test.md) invalid [Text](test.invalid)
 [Anchor](#invalid-anchor)
 
 ## Valid Anchor
+
+Valid relative path with anchor
+
+[Text](../valid-images/test.md#valid-external-anchor)
+
+Valid relative path with invalid anchor
+
+[Text](../valid-images/test.md#invalid-external-anchor)

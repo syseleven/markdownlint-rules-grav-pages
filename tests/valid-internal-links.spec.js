@@ -51,6 +51,15 @@ test('validate internal link', () => {
                 'valid-internal-links',
             ],
         },
+        {
+            errorContext: '[Text](../valid-images/test.md#invalid-external-anchor)',
+            errorDetail: "Did not find matching heading for anchor '#invalid-external-anchor'",
+            errorRange: null,
+            lineNumber: 36,
+            ruleDescription: 'Rule that reports if a file has an internal link to an invalid file',
+            ruleNames: [
+                'valid-internal-links',
+            ],
+        },
     ]);
 });
-

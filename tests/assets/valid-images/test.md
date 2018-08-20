@@ -15,3 +15,5 @@ Invalid image
 Invalid relative image
 
 ![AltText](../invalid/test.image)
+
+## Valid External Anchor
