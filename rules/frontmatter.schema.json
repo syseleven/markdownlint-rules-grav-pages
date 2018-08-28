@@ -7,7 +7,7 @@
     "published": { "type": "boolean" },
     "visible": { "type": "boolean" },
     "redirect": { "type": "string" },
-    "cache_enabled": { "type": "boolean" },
+    "cache_enable": { "type": "boolean" },
     "debugger": { "type": "boolean" },
     "never_cache_twig": { "type": "boolean" },
     "twig_first": { "type": "boolean" },
