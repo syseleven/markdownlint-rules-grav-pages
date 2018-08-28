@@ -101,6 +101,15 @@
         "refresh": { "type": "integer" }
       },
       "additionalProperties": { "type": "string" }
+    },
+    "page-toc": {
+      "type": "object",
+      "properties": {
+        "active": { "type": "boolean" },
+        "start": { "type": "integer" },
+        "depth": { "type": "integer" }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,
