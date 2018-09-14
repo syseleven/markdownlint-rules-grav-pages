@@ -17,3 +17,7 @@ Invalid relative image
 ![AltText](../invalid/test.image)
 
 ## Valid External Anchor
+
+Valid image with modifying grav query
+
+![AltText](test.image?resize=100,100)

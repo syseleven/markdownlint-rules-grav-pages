@@ -9,8 +9,11 @@ module.exports = {
         flat(params.tokens).filter(token => token.type === 'image').forEach((image) => {
             image.attrs.forEach((attr) => {
                 if (attr[0] === 'src') {
-                    const imgSrc = attr[1];
+                    let imgSrc = attr[1];
                     if (!imgSrc.match(/^(https?:)/)) {
+                        if (imgSrc.includes('?')) {
+                            imgSrc = imgSrc.slice(0, imgSrc.indexOf('?'));
+                        }
                         const path = `${params.name.split('/').slice(0, -1).join('/')}/${imgSrc}`;
 
                         if (!fs.existsSync(path) || !fs.lstatSync(path).isFile()) {
