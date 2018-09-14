@@ -26,11 +26,11 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "husky": "^1.0.0-rc.13",
-    "jest": "^23.5.0",
+    "husky": "^1.0.0-rc.14",
+    "jest": "^23.6.0",
     "standard-version": "^4.2.0"
   },
   "jest": {
