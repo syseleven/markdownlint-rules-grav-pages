@@ -34,3 +34,7 @@ Valid relative path with anchor
 Valid relative path with invalid anchor
 
 [Text](../valid-images/test.md#invalid-external-anchor)
+
+## Anchor with question?
+
+[Anchor](#anchor-with-question)

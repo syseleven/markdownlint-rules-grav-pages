@@ -6,6 +6,12 @@ test('validate internal link', () => {
     const results = markdownlint.sync({
         customRules: validInternalLinks,
         files: [src],
+        config: {
+            default: true,
+            'no-trailing-punctuation': {
+                punctuation: '.,;:!',
+            },
+        },
     });
 
     expect(results[src]).toEqual([

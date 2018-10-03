@@ -2,7 +2,7 @@
   "name": "markdownlint-rules-grav-pages",
   "version": "1.0.8",
   "description": "Markdownlint rules for Grav Pages",
-  "license": "BSD 3-Clause",
+  "license": "BSD-3-Clause",
   "repository": "https://github.com/syseleven/markdownlint-rules-grav-pages",
   "author": "Bastian Hofmann <b.hofmann@syseleven.de>",
   "scripts": {
@@ -26,10 +26,10 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.5.0",
+    "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "husky": "^1.0.0-rc.14",
+    "husky": "^1.1.0",
     "jest": "^23.6.0",
     "standard-version": "^4.2.0"
   },

@@ -10,7 +10,14 @@ const validateAnchor = (link, href, tokens, onError) => {
         if (!heading.line) {
             return;
         }
-        const headingAnchor = heading.line.trim().replace(/^[#\s]*/g, '').toLowerCase().replace(/[^a-z0-9_?!.,:]/g, '-');
+
+        const headingAnchor = heading.line
+            .trim()
+            .replace(/\?$/, '')
+            .replace(/^[#\s]*/g, '')
+            .toLowerCase()
+            .replace(/[^a-z0-9_?!.,:]/g, '-');
+
         if (`#${headingAnchor}` === href) {
             anchorFound = true;
         }
