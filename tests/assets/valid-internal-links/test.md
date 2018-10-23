@@ -38,3 +38,7 @@ Valid relative path with invalid anchor
 ## Anchor with question?
 
 [Anchor](#anchor-with-question)
+
+## Anchor with umlaut üÜß
+
+[Anchor](#anchor-with-umlaut-ueuess)

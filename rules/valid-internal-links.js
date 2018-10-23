@@ -1,3 +1,4 @@
+const transliteration = require('transliteration');
 const fs = require('fs');
 const url = require('url');
 const md = require('markdown-it')({ html: true });
@@ -11,12 +12,13 @@ const validateAnchor = (link, href, tokens, onError) => {
             return;
         }
 
-        const headingAnchor = heading.line
-            .trim()
-            .replace(/\?$/, '')
-            .replace(/^[#\s]*/g, '')
-            .toLowerCase()
-            .replace(/[^a-z0-9_?!.,:]/g, '-');
+        const headingAnchor = transliteration.slugify(heading.line.toLowerCase(), {
+            replace: {
+                ä: 'ae',
+                ö: 'oe',
+                ü: 'ue',
+            },
+        });
 
         if (`#${headingAnchor}` === href) {
             anchorFound = true;

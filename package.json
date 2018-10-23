@@ -23,6 +23,7 @@
     "markdown-it": "^8.4.2",
     "markdownlint": "^0.11.0",
     "markdownlint-cli": "^0.13.0",
+    "transliteration": "^1.6.6",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
