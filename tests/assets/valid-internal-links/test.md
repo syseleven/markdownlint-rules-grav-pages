@@ -42,3 +42,5 @@ Valid relative path with invalid anchor
 ## Anchor with umlaut üÜß
 
 [Anchor](#anchor-with-umlaut-ueuess)
+
+[LinkWithoutSrc]()

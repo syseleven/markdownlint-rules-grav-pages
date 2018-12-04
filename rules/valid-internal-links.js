@@ -97,7 +97,7 @@ module.exports = {
                     const href = attr[1];
                     if (href.match(/^#/)) {
                         validateAnchor(link, href, params.tokens, onError);
-                    } else if (!href.match(/^(mailto:|https?:)/)) {
+                    } else if (href && !href.match(/^(mailto:|https?:)/)) {
                         const parsedHref = url.parse(href);
                         let path;
                         if (parsedHref.pathname.match(/^\//)) {

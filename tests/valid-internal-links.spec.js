@@ -16,6 +16,17 @@ test('validate internal link', () => {
 
     expect(results[src]).toEqual([
         {
+            errorContext: '[LinkWithoutSrc]()',
+            errorDetail: null,
+            errorRange: [1, 18],
+            lineNumber: 46,
+            ruleDescription: 'No empty links',
+            ruleNames: [
+                'MD042',
+                'no-empty-links',
+            ],
+        },
+        {
             lineNumber: 13,
             ruleNames: ['valid-internal-links'],
             ruleDescription: 'Rule that reports if a file has an internal link to an invalid file',
