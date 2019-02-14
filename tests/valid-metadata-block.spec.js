@@ -26,6 +26,7 @@ test('validate too long title', () => {
         errorRange: null,
         lineNumber: 4,
         ruleDescription: 'Rule that reports if a file does not have a valid grav metadata block',
+        ruleInformation: null,
         ruleNames: ['valid-metadata-block'],
     }]);
 });
@@ -43,6 +44,7 @@ test('validate unrecognized property', () => {
         errorRange: null,
         lineNumber: 5,
         ruleDescription: 'Rule that reports if a file does not have a valid grav metadata block',
+        ruleInformation: null,
         ruleNames: ['valid-metadata-block'],
     }]);
 });
