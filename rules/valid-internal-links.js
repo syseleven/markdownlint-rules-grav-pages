@@ -2,7 +2,7 @@ const transliteration = require('transliteration');
 const fs = require('fs');
 const url = require('url');
 const md = require('markdown-it')({ html: true });
-const shared = require('markdownlint/lib/shared');
+const helpers = require('markdownlint/helpers/helpers');
 const flat = require('../lib/flat');
 
 const validateAnchor = (link, href, tokens, onError) => {
@@ -79,10 +79,10 @@ const parseMarkdownContent = (fileContent) => {
     // Remove UTF-8 byte order marker (if present)
     let content = fileContent.replace(/^\ufeff/, '');
     // Ignore the content of HTML comments
-    content = shared.clearHtmlCommentText(content);
+    content = helpers.clearHtmlCommentText(content);
     // Parse content into tokens and lines
     const tokens = md.parse(content, {});
-    const lines = content.split(shared.newLineRe);
+    const lines = content.split(helpers.newLineRe);
     return annotateTokens(tokens, lines);
 };
 

@@ -2,4 +2,4 @@
 title: My Page
 ---
 
-# Content
+## Content
