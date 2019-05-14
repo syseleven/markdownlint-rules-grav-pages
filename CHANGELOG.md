@@ -22,12 +22,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 <a name="1.0.9"></a>
-###[1.0.9](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.8...v1.0.9) (2018-10-03)
+### [1.0.9](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.8...v1.0.9) (2018-10-03)
 
 
 
 <a name="1.0.8"></a>
-###[1.0.8](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.7...v1.0.8) (2018-09-14)
+### [1.0.8](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.7...v1.0.8) (2018-09-14)
 
 
 
@@ -37,7 +37,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 <a name="1.0.6"></a>
-###[1.0.6](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.5...v1.0.6) (2018-08-28)
+### [1.0.6](https://github.com/syseleven/markdownlint-rules-grav-pages/compare/v1.0.5...v1.0.6) (2018-08-28)
 
 
 
