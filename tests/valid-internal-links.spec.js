@@ -21,7 +21,7 @@ test('validate internal link', () => {
             errorRange: [1, 18],
             lineNumber: 46,
             ruleDescription: 'No empty links',
-            ruleInformation: 'https://github.com/DavidAnson/markdownlint/blob/v0.14.1/doc/Rules.md#md042',
+            ruleInformation: 'https://github.com/DavidAnson/markdownlint/blob/v0.15.0/doc/Rules.md#md042',
             ruleNames: [
                 'MD042',
                 'no-empty-links',
