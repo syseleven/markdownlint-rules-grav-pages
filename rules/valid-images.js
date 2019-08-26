@@ -6,7 +6,7 @@ module.exports = {
     description: 'Rule that reports if a file has valid image references',
     tags: ['test'],
     function: function rule(params, onError) {
-        flat(params.tokens).filter(token => token.type === 'image').forEach((image) => {
+        flat(params.tokens).filter((token) => token.type === 'image').forEach((image) => {
             image.attrs.forEach((attr) => {
                 if (attr[0] === 'src') {
                     let imgSrc = attr[1];

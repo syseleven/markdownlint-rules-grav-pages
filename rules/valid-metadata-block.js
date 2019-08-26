@@ -15,23 +15,24 @@ module.exports = {
             });
             return;
         }
-        if (params.frontMatterLines[0] !== '---') {
+        const frontMatterLines = params.frontMatterLines.filter((line) => !!line);
+        if (frontMatterLines[0] !== '---') {
             onError({
                 lineNumber: 1,
                 detail: "Grav metadata block has to start with a '---'",
-                context: params.frontMatterLines[0],
+                context: frontMatterLines[0],
             });
             return;
         }
-        if (params.frontMatterLines[params.frontMatterLines.length - 1] !== '---') {
+        if (frontMatterLines[frontMatterLines.length - 1] !== '---') {
             onError({
                 lineNumber: 1,
                 detail: "Grav metadata block has to end with a '---'",
-                context: params.frontMatterLines[params.frontMatterLines.length - 1],
+                context: frontMatterLines[frontMatterLines.length - 1],
             });
             return;
         }
-        const yamlString = params.frontMatterLines.slice(1, -1).join('\n');
+        const yamlString = frontMatterLines.slice(1, -1).join('\n');
         let yamlDocument;
         try {
             yamlDocument = YAML.parse(yamlString);

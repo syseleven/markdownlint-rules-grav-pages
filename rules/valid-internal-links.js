@@ -7,7 +7,7 @@ const flat = require('../lib/flat');
 
 const validateAnchor = (link, href, tokens, onError) => {
     let anchorFound = false;
-    tokens.filter(token => token.type === 'heading_open').forEach((heading) => {
+    tokens.filter((token) => token.type === 'heading_open').forEach((heading) => {
         if (!heading.line) {
             return;
         }
@@ -91,7 +91,7 @@ module.exports = {
     description: 'Rule that reports if a file has an internal link to an invalid file',
     tags: ['test'],
     function: function rule(params, onError) {
-        flat(params.tokens).filter(token => token.type === 'link_open').forEach((link) => {
+        flat(params.tokens).filter((token) => token.type === 'link_open').forEach((link) => {
             link.attrs.forEach((attr) => {
                 if (attr[0] === 'href') {
                     const href = attr[1];
