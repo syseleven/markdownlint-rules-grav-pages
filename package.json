@@ -19,20 +19,20 @@
     }
   },
   "dependencies": {
-    "jsonschema": "^1.2.4",
-    "markdown-it": "^9.1.0",
-    "markdownlint": "^0.16.0",
-    "markdownlint-cli": "^0.18.0",
-    "transliteration": "^2.1.5",
+    "jsonschema": "^1.2.5",
+    "markdown-it": "^10.0.0",
+    "markdownlint": "^0.18.0",
+    "markdownlint-cli": "^0.20.0",
+    "transliteration": "^2.1.8",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.2.2",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.4",
+    "eslint-plugin-import": "^2.19.1",
+    "husky": "^3.1.0",
     "jest": "^24.9.0",
-    "standard-version": "^7.0.0"
+    "standard-version": "^7.0.1"
   },
   "jest": {
     "testURL": "http://localhost"
